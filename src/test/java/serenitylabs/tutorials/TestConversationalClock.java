@@ -101,7 +101,7 @@ public class TestConversationalClock {
     @TestWith(
             {
                     "12,20, It's twenty past twelve",
-                    "12,50, It's fifty to one"
+                    "12,50, It's ten to one"
             }
     )
     public void should_display_minutes_to_in_conversational_time(int hour,int minutes,String expectedTime)throws Exception{

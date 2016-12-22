@@ -79,6 +79,12 @@ public class TimeStore {
         if(minutes<20) {
             return MINUTES.get(minutes);
         }else{
+            if(minutes>30){
+                minutes = 60 - minutes;
+            }
+            if(minutes<20) {
+                return MINUTES.get(minutes);
+            }
             bufferNumber1 = (int) Math.floor(minutes/10)*10;;
             bufferNumber2 = (minutes%10);
             return MINUTES.get(bufferNumber1)+" "+MINUTES.get(bufferNumber2);

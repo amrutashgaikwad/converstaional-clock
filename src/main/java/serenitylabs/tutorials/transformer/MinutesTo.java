@@ -7,7 +7,7 @@ public class MinutesTo extends TimeStore implements serenitylabs.tutorials.inter
     @Override
 
     public String convert(Integer hour, Integer minutes){
-        return "It's " +englishNumberToWords(minutes)+"to "+ HOUR.get((hour%12)+1);
+        return "It's "+englishNumberToWords(minutes)+" to "+ HOUR.get((hour%12)+1);
 
     }
 }
